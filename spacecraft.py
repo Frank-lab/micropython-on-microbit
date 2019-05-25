@@ -4,6 +4,7 @@ import random
 player_x = 2
 player_y = 4
 enemys = [[random.randint(0, 4), 0]]
+maxnum = 1
 hit = 0
 press_count = 0
 timer = running_time()
@@ -74,10 +75,12 @@ while True:
         addone = [random.randint(0, 4), 0]
         enemys.append(addone)
         press_count = 0
+        if maxnum < len(enemys):
+            maxnum = len(enemys)
 #game over
 for enemy in enemys:
         display.set_pixel(enemy[0], enemy[1], 5)
 display.set_pixel(player_x, player_y, bom)
 sleep(1500) 
 #score
-display.scroll(int(running_time() / 100))    
+display.scroll(int(running_time() * maxnum / 1000))    
