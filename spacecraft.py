@@ -11,12 +11,11 @@ bom_timer = running_time()
 while True:
     display.clear()
     display.set_pixel(player_x, player_y, bom)
-    reading = accelerometer.get_x()
-    if reading < -20:
+    if button_a.is_pressed():
         player_x = (player_x - 1 + 5) % 5
         press_count += 1
         sleep(90)
-    if reading > 20:
+    if button_b.is_pressed():
         player_x = (player_x + 1 + 5) % 5
         press_count += 1
         sleep(90)
@@ -49,7 +48,7 @@ while True:
         bom_timer = running_time()
         if bom < 9:
             bom = (bom + 1)
-    sleep(100)
+    sleep(40)
     if press_count > 5:
         addone = [random.randint(0, 4), 0]
         enemys.append(addone)
@@ -58,4 +57,4 @@ for enemy in enemys:
         display.set_pixel(enemy[0], enemy[1], 5)
 display.set_pixel(player_x, player_y, bom)
 sleep(1500) 
-display.scroll(int(running_time() / 100))   
+display.scroll(int(running_time() / 100))    
