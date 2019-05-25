@@ -8,6 +8,6 @@
  B: to right<br>
  A+B: bom<br>
 
- if you are hit by the enemy, game over!<br> 
+ If you are hit by the enemy, game over!<br> 
  Then the score will be shown.<br>
  Have fun!!<br>
