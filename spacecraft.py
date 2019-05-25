@@ -9,6 +9,16 @@ press_count = 0
 timer = running_time()
 bom = 4
 bom_timer = running_time()
+
+craft = Image("00900:"
+              "09990:"
+              "99999:"
+              "00900:"
+              "09990")
+display.show(craft)
+sleep(2000)
+display.clear()
+sleep(1000)
 # main loop
 while True:
     #draw player
