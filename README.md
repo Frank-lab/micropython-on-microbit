@@ -13,7 +13,7 @@
  Or you can download the Hex file to your microbit.<br>
  
  ## 2.Timer
- A simple timer
+ A simple timer<br>
  [Operation]<br>
  A:+1 min<br>
  B: start<br>
