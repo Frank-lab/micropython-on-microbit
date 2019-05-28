@@ -11,3 +11,10 @@
 
  Edit the source and compile it at https://python.microbit.org/v/1.1<br>
  Or you can download the Hex file to your microbit.<br>
+ 
+ ## 2.Timer
+ A simple timer
+ [Operation]<br>
+ A:+1 min<br>
+ B: start<br>
+ 
